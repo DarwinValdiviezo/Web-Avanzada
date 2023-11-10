@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header { /* Aqui cree el css del header, con un fondo negro, con un relleno de 20px y centre el texto */
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.menu { /* Se crea el css del menu */
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block; /* Aqui ubicque mi menu horizontalmente y le di espacio entre cada uno */
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none; /* Quite la linea que me salia bajo las letras, puse la fuente color blanco y un tamaño de 18px*/
+    color: #fff;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    color: #ffd700; /* Cambia el color al pasar el mouse */
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.contenido {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    float: left;
+}
+
+.contenido-texto {
+    flex: 1;
+}
+
+.imagen-derecha img {
+    width: 20%; /* Ajusta el ancho de la imagen según sea necesario */
+    height: auto; /* Para mantener la proporción original de la imagen */
+    float: right;
+}
+
+.centro {
+    text-align: center;
+}
+
+.centro h1 {
+    color: #333;
+    font-size: 36px;
+}
+
+.centro h4 {
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .contenido {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .centro h1 {
+        font-size: 28px;
+    }
+
+    .centro h4 {
+        font-size: 16px;
+    }
+}
+
+button { /* boton para cambiar el color de fondo */
+    background-color: #fff; 
+    color: rgb(0, 0, 0); 
+    padding: 10px 20px; 
+    font-size: 16px; 
+
+}
+
+button:hover {
+    background-color: #7e7e7e; /* Cambia el color de fondo al pasar el mouse */
+}
